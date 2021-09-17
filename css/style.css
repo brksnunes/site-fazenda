@@ -7,8 +7,8 @@ body {
 
 p {
   font-family: "Source Sans Pro", sans-serif;
-  color: #848484;
-  font-size: 16px;
+  color: #1b1b1b;
+  font-size: 17px;
 }
 
 h1,
@@ -31,9 +31,10 @@ h6 {
 
 ol,
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 50px;
 }
 
 figure {
@@ -69,7 +70,11 @@ a:hover {
   letter-spacing: 1px;
   padding: 12px 40px;
   text-transform: uppercase;
-  border-radius: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .btn-main:hover {
@@ -2100,10 +2105,27 @@ a:hover {
 	Páginaa dos animais
 ==============================================================*/
 .bg-color-title {
-  background: #1a8646;
+  background-color: #1a8646;
   color: #fff;
-  text-align: center;
-  padding-top: 5px;
+  text-align: left;
+  padding: 10px 10px 10px 30px;
+  border: none;
+  width: 100%;
+}
+.text-valor {
+  background-color: #eee;
+  margin: 0px;
+  padding-left: 30px;
+}
+.area-valor {
+  background-color: #eee;
+}
+.container-animais {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /*============================================================
 	For Small Desktop
