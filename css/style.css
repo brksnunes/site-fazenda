@@ -2154,6 +2154,9 @@ a:hover {
 /*============================================================
 	Páginaa dos animais
 ==============================================================*/
+.responsive-image{
+  width: 100%;
+}
 .bg-color-title {
   background-color: #1a8646;
   color: #fff;
