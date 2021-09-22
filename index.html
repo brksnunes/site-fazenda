@@ -168,19 +168,16 @@ Start About Section
 ==================================== -->
     <section class="about" id="about">
       <div class="container">
+
         <div class="row">
           <!-- section title -->
-          <div class="title text-center">
-            <h2>Quem Somos</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              placeat voluptas tempore recusandae quasi nesciunt in, facilis
-              animi. Sint, possimus?
-            </p>
+          <div class="col-12 title text-center">
+            <h2 class="text-center">Quem Somos</h2>
             <div class="border"></div>
           </div>
           <!-- /section title -->
-
+        </div>
+        <div class="row">
           <div class="col-md-6">
             <img src="images/home/about-us.jpg" class="img-fluid" alt="" />
             <img
@@ -245,7 +242,10 @@ Start About Section
             </ul>
           </div>
         </div>
+        </div>
+
         <!-- End row -->
+
       </div>
       <!-- End container -->
     </section>
@@ -258,7 +258,7 @@ Start Call To Action
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Let's Create Something Together</h2>
+            <h2>Lorem ipsum dolor</h2>
             <p>
               Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin
               bibendum auctor, <br />
@@ -290,15 +290,15 @@ Start Call To Action
               </p>
               <div class="border"></div>
             </div>
-
             <!-- /section title -->
+            <!-- filters title
             <div class="portfolio-filter">
               <button type="button" data-filter="all">Tudo</button>
               <button type="button" data-filter="bezzerro">Bezzerros</button>
               <button type="button" data-filter="gir">Girolando</button>
               <button type="button" data-filter="leite">Leite</button>
               <button type="button" data-filter="touro">Touro</button>
-            </div>
+            </div>-->
 
             <div class="row filter-container">
 
@@ -628,7 +628,8 @@ Start Call To Action
 
           <!-- Contact Form -->
           <div class="contact-form col-md-6">
-            <form id="contact-form" method="POST" role="form">
+
+            <form name="contact-form" method="POST" role="form" data-netlify="true">
               <div class="form-group">
                 <input
                   type="text"
@@ -681,7 +682,9 @@ Start Call To Action
                 />
               </div>
             </form>
+
           </div>
+
           <!-- ./End Contact Form -->
         </div>
         <!-- end row -->

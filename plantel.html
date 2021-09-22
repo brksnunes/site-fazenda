@@ -57,9 +57,10 @@
   End Preloader
   ==================================== -->
 
-    <!--
+<!--
 Fixed Navigation
-==================================== -->
+====================================
+-->
     <header class="navigation fixed-top">
       <div class="container">
         <!-- main nav -->
@@ -84,65 +85,11 @@ Fixed Navigation
 
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto text-center">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Homepage
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="index.html">Homepage</a>
-                  <a class="dropdown-item" href="onepage-slider.html"
-                    >Onepage</a
-                  >
-                  <a class="dropdown-item" href="onepage-text.html"
-                    >Onepage 2</a
-                  >
-                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pricing.html">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Pages
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="404.html">404 Page</a>
-                  <a class="dropdown-item" href="blog.html">Blog Page</a>
-                  <a class="dropdown-item" href="single-post.html"
-                    >Blog Single Page</a
-                  >
-                </div>
+                <a class="nav-link" href="#contact">Contato</a>
               </li>
             </ul>
           </div>
@@ -150,10 +97,15 @@ Fixed Navigation
         <!-- /main nav -->
       </div>
     </header>
-    <!--
+<!--
 End Fixed Navigation
-==================================== -->
+==================================== 
+-->
 
+<!--
+Header
+====================================
+-->
     <section class="single-page-header">
       <div class="container">
         <div class="row">
@@ -163,7 +115,10 @@ End Fixed Navigation
         </div>
       </div>
     </section>
-
+<!--
+/Header
+====================================
+-->
     <section class="posts section">
       <div class="container">
         <div class="row">
@@ -335,6 +290,119 @@ End Fixed Navigation
         </div>
       </div>
     </section>
+
+        <!--Start Contact Us
+=========================================== -->
+<section class="contact-us" id="contact">
+  <div class="container">
+    <div class="row">
+      <!-- section title -->
+      <div class="col-12">
+        <div class="title text-center">
+          <h2>Fale Conosco</h2>
+          <div class="border"></div>
+        </div>
+      </div>
+      <!-- /section title -->
+      <!-- Contact Details -->
+      <div class="contact-details col-md-6">
+        <h3>Nossos Contatos</h3>
+        <p>
+          Fale conosco da maneira que for mais conveniente para você.
+          Estamos ansiosos para te atender da melhor maneira possível!
+        </p>
+        <ul class="contact-short-info">
+          <li>
+            <i class="tf-ion-android-phone-portrait"></i>
+            <span>Telefone: (11) 1234-5678</span>
+          </li>
+          <li>
+            <i class="tf-ion-social-whatsapp"></i>
+            <span>Whatsapp: (11) 1234-5678</span>
+          </li>
+          <li>
+            <i class="tf-ion-android-mail"></i>
+            <span>Email: mail@mail.com</span>
+          </li>
+        </ul>
+        <!-- Footer Social Links -->
+        <div class="social-icon">
+          <ul>
+            <li>
+              <a href="#"><i class="tf-ion-social-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="tf-ion-android-mail"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!--/. End Footer Social Links -->
+      </div>
+      <!-- / End Contact Details -->
+
+      <!-- Contact Form -->
+      <div class="contact-form col-md-6">
+        <form id="contact-form" method="POST" role="form">
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Seu Nome"
+              class="form-control"
+              name="name"
+              id="name"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              placeholder="Seu E-Mail"
+              class="form-control"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Assunto"
+              class="form-control"
+              name="subject"
+              id="subject"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              rows="6"
+              placeholder="Mensagem"
+              class="form-control"
+              name="message"
+              id="message"
+            ></textarea>
+          </div>
+          <div id="success" class="success">
+            Obrigado! Sua mensagem foi enviada e será respondida o mais
+            rápido possível :)
+          </div>
+          <div id="error" class="error">
+            Desculpe, algo deu errado. Tente novamente mais tarde
+          </div>
+          <div id="cf-submit">
+            <input
+              type="submit"
+              id="contact-submit"
+              class="btn btn-transparent"
+              value="Enviar"
+            />
+          </div>
+        </form>
+      </div>
+      <!-- ./End Contact Form -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section>
+<!-- end section -->
 
     <footer id="footer" class="bg-one">
       <div class="footer-bottom">
