@@ -81,15 +81,34 @@ a:hover {
   color: #fff;
 }
 
+.btn-main-transparent {
+  color: #1a8646;
+  border: 3px solid #1a8646;
+  display: inline-block;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 14px 35px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
 .btn-transparent {
   color: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   display: inline-block;
   font-size: 13px;
   letter-spacing: 1px;
   padding: 14px 35px;
   text-transform: uppercase;
-  border-radius: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .btn-transparent:hover {
@@ -410,16 +429,16 @@ a:hover {
 }
 
 .single-page-header {
-  background-image: url("../images/about/about-header.jpg");
+  background-image: url("../images/animais/banner.jpg");
   background-size: cover;
-  padding: 140px 0 70px;
+  padding: 180px 0 70px;
   text-align: center;
   color: #fff;
   position: relative;
 }
 
 .single-page-header:before {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.0);
   position: absolute;
   content: "";
   top: 0;
@@ -442,8 +461,8 @@ a:hover {
 .navigation .navbar-light .navbar-nav .nav-item .nav-link {
   color: #fff;
   font-size: 14px;
-  line-height: 26px;
-  padding: 20px 15px;
+  line-height: 20px;
+  padding: 10px 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.2s ease-in-out 0s;
@@ -574,7 +593,7 @@ a:hover {
 }
 
 .hero-area {
-  background-image: url("../images/slider/slider-bg-1.jpg");
+  background-image: url("../images/home/banner.jpg");
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -585,7 +604,7 @@ a:hover {
 
 .hero-area:before {
   content: "";
-  background: rgba(0, 0, 0, 0.63);
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
   right: 0;
@@ -599,8 +618,8 @@ a:hover {
 
 .hero-area .block h1 {
   font-size: 50px;
-  font-weight: 700;
-  margin-top: 20px;
+  font-weight: 800;
+  margin-top: 40px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -611,8 +630,9 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.hero-area .block .btn-main {
+.hero-area .block .btn-transparent {
   margin-right: 8px;
+  margin-bottom: 20px;
 }
 
 .hero-area .block .btn-main:hover {
@@ -650,8 +670,36 @@ a:hover {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 640px) {
+  .hero-area {
+    background-image: url("../images/slider/banner.jpg");
+    background-size: cover;
+    height: 50vh;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-area .block h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 40px;
+    text-transform: uppercase;
+  }
+  .hero-area .block p {
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .hero-area .block .btn-transparent {
+    margin-right: 8px;
+    margin-bottom: 0px;
+  }
+}
+
 .dark-bg {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.3);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -876,7 +924,7 @@ a:hover {
  Call To Action 1
 ==================================================================*/
 .call-to-action {
-  padding: 100px 0;
+  padding: 50px 0;
   background: url("../images/call-to-action/call-to-action-bg-2.jpg");
   background-size: cover;
   color: #fff;
@@ -963,13 +1011,15 @@ a:hover {
 
 .contact-details .contact-short-info {
   margin-top: 30px;
-  font-size: 23px;
+  font-size: 20px;
+  list-style-type: none;
+  text-align: left;
+  margin-left: -48px;
 }
 
 .contact-details .contact-short-info li {
   margin-bottom: 10px;
 }
-
 .social-icon {
   margin-top: 20px;
 }

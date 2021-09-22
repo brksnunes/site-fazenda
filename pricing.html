@@ -36,7 +36,7 @@
     <!-- Slick Carousel -->
     <link rel="stylesheet" href="plugins/slick/slick.css" />
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body id="body">
@@ -57,7 +57,7 @@
   End Preloader
   ==================================== -->
 
-<!--
+    <!--
 Fixed Navigation
 ==================================== -->
     <header class="navigation fixed-top">
@@ -84,28 +84,10 @@ Fixed Navigation
 
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto text-center">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Homepage
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="index.html">Homepage</a>
-                  <a class="dropdown-item" href="onepage-slider.html"
-                    >Onepage</a
-                  >
-                  <a class="dropdown-item" href="onepage-text.html"
-                    >Onepage 2</a
-                  >
-                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
               </li>
+              <!--
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
               </li>
@@ -120,29 +102,9 @@ Fixed Navigation
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="pricing.html">Pricing</a>
-              </li>
+              </li>-->
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Pages
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="404.html">404 Page</a>
-                  <a class="dropdown-item" href="blog.html">Blog Page</a>
-                  <a class="dropdown-item" href="single-post.html"
-                    >Blog Single Page</a
-                  >
-                </div>
+                <a class="nav-link" href="#contact">Contato</a>
               </li>
             </ul>
           </div>
@@ -153,7 +115,6 @@ Fixed Navigation
     <!--
 End Fixed Navigation
 ==================================== -->
-
     <section class="single-page-header">
       <div class="container">
         <div class="row">
@@ -177,125 +138,233 @@ Start About Section
             </div>
             <div>
               <p>
-                Novilha de Pista. Beleza racial e Pedigree com muitos touros provados. Seu Pai Lipe FIV Mutum, se trata de touro jovem destaque da CRV Lagoa, sua mãe Fécula é uma das maiores doadoras da raça com produção de mais de 16.000 kg de leite. Poltrona será Doadora na certa e está pronta para coleta. Situação Reprodutiva: vazia. Poltrona Córrego Bonito.
+                Novilha de Pista. Beleza racial e Pedigree com muitos touros
+                provados. Seu Pai Lipe FIV Mutum, se trata de touro jovem
+                destaque da CRV Lagoa, sua mãe Fécula é uma das maiores doadoras
+                da raça com produção de mais de 16.000 kg de leite. Poltrona
+                será Doadora na certa e está pronta para coleta. Situação
+                Reprodutiva: vazia. Poltrona Córrego Bonito.
               </p>
-              <br>
+              <br />
             </div>
           </div>
           <!-- /section title -->
           <div class="col-md-8">
             <!-- Início do Slider  -->
-            <div id="slider" class="carousel slide" data-ride="carousel">
+            <div id="slider" class="carousel slide">
               <!-- Indicators -->
               <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
+                <li data-target="#slider" data-slide-to="3"></li>
               </ul>
               <!-- The slideshow -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="https://via.placeholder.com/700" alt="Lorem Ipsum">
-                    <div class="carousel-caption">
-                      <h5>Lorem</h5>
-                      <p>Aenean quam. Pellentesque ornare sem laca quam venenatis vestibulum.</p>
-                    </div>
+                  <img
+                    src="https://via.placeholder.com/700"
+                    alt="Lorem Ipsum"
+                  />
+                  <div class="carousel-caption">
+                    <h5>Lorem</h5>
+                    <p>
+                      Aenean quam. Pellentesque ornare sem laca quam venenatis
+                      vestibulum.
+                    </p>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="https://via.placeholder.com/700" alt="Lorem Ipsum">
+                  <img
+                    src="https://via.placeholder.com/700"
+                    alt="Lorem Ipsum"
+                  />
                 </div>
                 <div class="carousel-item">
-                  <img src="https://via.placeholder.com/700" alt="Lorem Ipsum">
+                  <img
+                    src="https://via.placeholder.com/700"
+                    alt="Lorem Ipsum"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                      class="embed-responsive-item"
+                      src="https://www.youtube.com/embed/L1KTzBjpskA"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
               </div>
               <!-- Left and right controls -->
-              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <a class="carousel-control-prev" href="#slider" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
               </a>
-              <a class="carousel-control-next" href="#demo" data-slide="next">
+              <a class="carousel-control-next" href="#slider" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
               </a>
             </div>
             <!-- Fim do Slider  -->
-            <br>
           </div>
           <!-- Início dos detalhes  -->
           <div class="col-md-4">
             <div class="card">
               <div class="card-header">
-                  CONDIÇÕES PARA NEGÓCIO:
+                CONDIÇÕES PARA NEGÓCIO:
               </div>
-                <div class="card-body">
-                  <h3>R$ 8.500,00</h3>
-                  <b>*formas de pagamento sob consulta</b>
-                </div>
+              <div class="card-body">
+                <h3>R$ 8.500,00</h3>
+                <b>*formas de pagamento sob consulta</b>
+              </div>
             </div>
-            <br>
+            <br />
             <div class="card">
               <div class="card-header">
-                  ÁRVORE GENEALÓGICA:
+                ÁRVORE GENEALÓGICA:
               </div>
-                <div class="card-body text-center">
-                  <button type="button" class="btn btn-main btn-block" data-toggle="modal" data-target="#exampleModal">Visualizar</button>
-                </div>
+              <div class="card-body text-center">
+                <button
+                  type="button"
+                  class="btn btn-main btn-block"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  Visualizar
+                </button>
+              </div>
             </div>
-            <br>
+            <br />
             <div class="card">
               <div class="card-header">
                 INFORMAÇÕES GERAIS:
               </div>
-                <div class="card-body text-center">
-                  <button type="button" class="btn btn-main btn-block mt-10 " data-toggle="modal" data-target="#infoAnimais">Informações dos animais</button>
-                  <button type="button" class="btn btn-main btn-block mt-10 " data-toggle="modal" data-target="#entregaAnimais">Entrega dos Animais</button>
-                  <button type="button" class="btn btn-main btn-block mt-10 " data-toggle="modal" data-target="#regrasNegocios">Regras de Negócios</button>
-                </div>
+              <div class="card-body text-center">
+                <button
+                  type="button"
+                  class="btn btn-main btn-block mt-10"
+                  data-toggle="modal"
+                  data-target="#infoAnimais"
+                >
+                  Informações dos animais
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-main btn-block mt-10"
+                  data-toggle="modal"
+                  data-target="#entregaAnimais"
+                >
+                  Entrega dos Animais
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-main btn-block mt-10"
+                  data-toggle="modal"
+                  data-target="#regrasNegocios"
+                >
+                  Regras de Negócios
+                </button>
+              </div>
             </div>
-
-
           </div>
           <!-- Fim dos detalhes  -->
           <!-- Início do modal da árvore genealógica  -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">ÁRVORE GENEALÓGICA</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    ÁRVORE GENEALÓGICA
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <img src="https://via.placeholder.com/650" alt="Lorem Ipsum" style="width: 100%;">
+                  <img
+                    src="https://via.placeholder.com/650"
+                    alt="Lorem Ipsum"
+                    style="width: 100%;"
+                  />
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-                  <a href="/images/650.png" download="arvore-genealogica.png"><button type="button" class="btn btn-primary">Baixar este arquivo</button></a>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                  <a href="/images/650.png" download="arvore-genealogica.png"
+                    ><button type="button" class="btn btn-primary">
+                      Baixar este arquivo
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <!-- Fim do modal da árvore genealógica  -->
           <!-- Início do modal de info dos animais  -->
-          <div class="modal fade" id="infoAnimais" tabindex="-1" aria-labelledby="infoAnimaisLabel" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="infoAnimais"
+            tabindex="-1"
+            aria-labelledby="infoAnimaisLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="infoAnimaisLabel">Informações dos animais</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <h5 class="modal-title" id="infoAnimaisLabel">
+                    Informações dos animais
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p class="text-justify">Os animais aqui a venda são todos 'criolos' da Córrego Bonito, ou seja, foram nascidos e criados na Fazenda.<br>
-                    São criados a pasto de boa qualidade recebendo sempre suplementação mineral.<br>
-                    Quando eram bezerros até a desmama receberam um farelo de soja e milho como complemento ao leite e ao pasto, sendo Piquetes irrigados de Tifton e Mombaça.<br>
-                    Suas mães são vacas GIR Leiteiras PO da Fazenda, são ordenhadas uma vez por dia sempre com bezerro ao pé.<br>
-                    A foto dos animais foram tiradas recentemente e portanto os animais se encontram em condições muito próximas às das fotos.<br>
-                    Os animais são dóceis, vacinados e vermifugados dentro de um programa anual.<br>
-                    Em resumo: você está comprando QUALIDADE com TRANSPARÊNCIA.</p>
+                  <p class="text-justify">
+                    Os animais aqui a venda são todos 'criolos' da Córrego
+                    Bonito, ou seja, foram nascidos e criados na Fazenda.<br />
+                    São criados a pasto de boa qualidade recebendo sempre
+                    suplementação mineral.<br />
+                    Quando eram bezerros até a desmama receberam um farelo de
+                    soja e milho como complemento ao leite e ao pasto, sendo
+                    Piquetes irrigados de Tifton e Mombaça.<br />
+                    Suas mães são vacas GIR Leiteiras PO da Fazenda, são
+                    ordenhadas uma vez por dia sempre com bezerro ao pé.<br />
+                    A foto dos animais foram tiradas recentemente e portanto os
+                    animais se encontram em condições muito próximas às das
+                    fotos.<br />
+                    Os animais são dóceis, vacinados e vermifugados dentro de um
+                    programa anual.<br />
+                    Em resumo: você está comprando QUALIDADE com TRANSPARÊNCIA.
+                  </p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
                 </div>
               </div>
             </div>
@@ -303,21 +372,50 @@ Start About Section
           <!-- Fim do modal de info dos animais  -->
 
           <!-- Início do modal de Entrega dos Animais  -->
-          <div class="modal fade" id="entregaAnimais" tabindex="-1" aria-labelledby="entregaAnimaisLabel" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="entregaAnimais"
+            tabindex="-1"
+            aria-labelledby="entregaAnimaisLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="entregaAnimaisLabel">Entrega dos Animais</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <h5 class="modal-title" id="entregaAnimaisLabel">
+                    Entrega dos Animais
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p class="text-justify">Os valores negociados não incluem frete, ou seja, se trata do preço no curral da Fazenda. A retirada dos animais é de responsabilidade do comprador como praxe de mercado, porém podemos sim intermediar um frete mais acessível ao comprador através de caminhões boiadeiros disponíveis na região.<br>
-                    Em resumo: entre no curral de negócios e aparte o animal e/ou os animais de seu interesse, nos informe o local da sua Fazenda / local de entrega, e podemos orçar o frete pra você, e se tiver interesse passaremos o contato para que concretize a entrega diretamente com o transportador.</p>
+                  <p class="text-justify">
+                    Os valores negociados não incluem frete, ou seja, se trata
+                    do preço no curral da Fazenda. A retirada dos animais é de
+                    responsabilidade do comprador como praxe de mercado, porém
+                    podemos sim intermediar um frete mais acessível ao comprador
+                    através de caminhões boiadeiros disponíveis na região.<br />
+                    Em resumo: entre no curral de negócios e aparte o animal
+                    e/ou os animais de seu interesse, nos informe o local da sua
+                    Fazenda / local de entrega, e podemos orçar o frete pra
+                    você, e se tiver interesse passaremos o contato para que
+                    concretize a entrega diretamente com o transportador.
+                  </p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
                 </div>
               </div>
             </div>
@@ -325,34 +423,85 @@ Start About Section
           <!-- Fim do modal de Entrega dos Animais  -->
 
           <!-- Início do modal de Regras de Negócios  -->
-          <div class="modal fade" id="regrasNegocios" tabindex="-1" aria-labelledby="regrasNegociosLabel" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="regrasNegocios"
+            tabindex="-1"
+            aria-labelledby="regrasNegociosLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="regrasNegociosLabel">Regras de Negócios</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <h5 class="modal-title" id="regrasNegociosLabel">
+                    Regras de Negócios
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
+                  <ol type="I">
+                    <li>
+                      A Córrego Bonito se responsabiliza plenamente pela
+                      veracidade das informações presentes neste Curral de
+                      Negócios.
+                    </li>
+                    <li>
+                      Os animais se encontram na Fazenda Córrego Bonito e estão
+                      todos disponíveis para vistoria pelos compradores
+                      interessados.
+                    </li>
+                    <li>
+                      Os animais são todos de propriedade da Fazenda, ou seja,
+                      não intermediamos animais de outros criadores.
+                    </li>
+                    <li>
+                      As vendas poderão ocorrer de 2 formas:
                       <ol type="I">
-                      <li>A Córrego Bonito se responsabiliza plenamente pela veracidade das informações presentes neste Curral de Negócios.</li>
-                      <li>Os animais se encontram na Fazenda Córrego Bonito e estão todos disponíveis para vistoria pelos compradores interessados.</li>
-                      <li>Os animais são todos de propriedade da Fazenda, ou seja, não intermediamos animais de outros criadores.</li>
-                      <li>As vendas poderão ocorrer de 2 formas:
-                        <ol type="I">
-                          <li>Escolha dos animais pelo Curral de Negócios online "site", seguido de contato telefônico para concretizar o negócio. A venda se efetivará após pagamento do animal.</li>
-                          <li>Vistoria e compra dos animais direto na Fazenda.</li>
-                        </ol>
-                      </li>
-                      <li>Para ambas as formas, NÃO existe comissão de vendas.</li>
-                      <li>Os valores negociados se referem ao animais na Fazenda. Frete por conta do comprador.</li>
-                      <li>Quanto as formas de pagamento: as mesmas serão negociadas caso a caso,  e se ocorrer de ser venda a prazo, a mesma irá se adequar aos padrões de mercado quanto aprovação de cadastro, penhor dos animais e transferência junto a ABCZ.</li>
-                      <li>Qualquer incidência de ICMS correrá por conta do comprador.</li>
+                        <li>
+                          Escolha dos animais pelo Curral de Negócios online
+                          "site", seguido de contato telefônico para concretizar
+                          o negócio. A venda se efetivará após pagamento do
+                          animal.
+                        </li>
+                        <li>
+                          Vistoria e compra dos animais direto na Fazenda.
+                        </li>
                       </ol>
+                    </li>
+                    <li>
+                      Para ambas as formas, NÃO existe comissão de vendas.
+                    </li>
+                    <li>
+                      Os valores negociados se referem ao animais na Fazenda.
+                      Frete por conta do comprador.
+                    </li>
+                    <li>
+                      Quanto as formas de pagamento: as mesmas serão negociadas
+                      caso a caso, e se ocorrer de ser venda a prazo, a mesma
+                      irá se adequar aos padrões de mercado quanto aprovação de
+                      cadastro, penhor dos animais e transferência junto a ABCZ.
+                    </li>
+                    <li>
+                      Qualquer incidência de ICMS correrá por conta do
+                      comprador.
+                    </li>
+                  </ol>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
                 </div>
               </div>
             </div>
@@ -364,11 +513,122 @@ Start About Section
       <!-- End container -->
     </section>
     <!-- End section -->
+
+    <!--Start Contact Us
+=========================================== -->
+    <section class="contact-us" id="contact">
+      <div class="container">
+        <div class="row">
+          <!-- section title -->
+          <div class="col-12">
+            <div class="title text-center">
+              <h2>Fale Conosco</h2>
+              <div class="border"></div>
+            </div>
+          </div>
+          <!-- /section title -->
+          <!-- Contact Details -->
+          <div class="contact-details col-md-6">
+            <h3>Nossos Contatos</h3>
+            <p>
+              Fale conosco da maneira que for mais conveniente para você.
+              Estamos ansiosos para te atender da melhor maneira possível!
+            </p>
+            <ul class="contact-short-info">
+              <li>
+                <i class="tf-ion-android-phone-portrait"></i>
+                <span>Telefone: (11) 1234-5678</span>
+              </li>
+              <li>
+                <i class="tf-ion-social-whatsapp"></i>
+                <span>Whatsapp: (11) 1234-5678</span>
+              </li>
+              <li>
+                <i class="tf-ion-android-mail"></i>
+                <span>Email: mail@mail.com</span>
+              </li>
+            </ul>
+            <!-- Footer Social Links -->
+            <div class="social-icon">
+              <ul>
+                <li>
+                  <a href="#"><i class="tf-ion-social-whatsapp"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="tf-ion-android-mail"></i></a>
+                </li>
+              </ul>
+            </div>
+            <!--/. End Footer Social Links -->
+          </div>
+          <!-- / End Contact Details -->
+
+          <!-- Contact Form -->
+          <div class="contact-form col-md-6">
+            <form id="contact-form" method="POST" role="form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Seu Nome"
+                  class="form-control"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  placeholder="Seu E-Mail"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Assunto"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  rows="6"
+                  placeholder="Mensagem"
+                  class="form-control"
+                  name="message"
+                  id="message"
+                ></textarea>
+              </div>
+              <div id="success" class="success">
+                Obrigado! Sua mensagem foi enviada e será respondida o mais
+                rápido possível :)
+              </div>
+              <div id="error" class="error">
+                Desculpe, algo deu errado. Tente novamente mais tarde
+              </div>
+              <div id="cf-submit">
+                <input
+                  type="submit"
+                  id="contact-submit"
+                  class="btn btn-transparent"
+                  value="Enviar"
+                />
+              </div>
+            </form>
+          </div>
+          <!-- ./End Contact Form -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end section -->
     <footer id="footer" class="bg-one">
       <div class="footer-bottom">
-        <h5>Copyright 2016. All rights reserved.</h5>
-        <h6>Design and Developed by <a href="">Themefisher</a></h6>
-        <h6>Distributed by <a href="https://themewagon.com/">Themewagon</a></h6>
+        <h5>Copyright 2021. Todos os direitos reservados.</h5>
       </div>
     </footer>
     <!-- end footer -->
@@ -401,7 +661,6 @@ Start About Section
     <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
     <!-- Smooth Scroll js -->
     <script src="plugins/smooth-scroll/smooth-scroll.min.js"></script>
-
     <!-- Custom js -->
     <script src="js/script.js"></script>
   </body>
