@@ -43,6 +43,10 @@ figure {
 
 a {
   transition: all 0.3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -moz-transition: all 0.3s ease-in 0s;
+  -ms-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
 }
 
 iframe {
@@ -58,12 +62,12 @@ a:hover {
 
 a:focus,
 a:hover {
-  color: #1a8646;
+  color: #387002;
 }
 
 .btn-main {
-  background: #1a8646;
-  border: 1px solid #1a8646;
+  background: #387002;
+  border: 1px solid #387002;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -82,8 +86,8 @@ a:hover {
 }
 
 .btn-main-transparent {
-  color: #1a8646;
-  border: 3px solid #1a8646;
+  color: #387002;
+  border: 3px solid #387002;
   display: inline-block;
   font-size: 15px;
   letter-spacing: 1px;
@@ -247,7 +251,7 @@ a:hover {
     height: 30px;
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
-    background: #1a8646;
+    background: #387002;
   }
   50%,
   100% {
@@ -306,7 +310,7 @@ a:hover {
   margin: 20px auto 20px;
   position: relative;
   width: 80px;
-  background: #1a8646;
+  background: #387002;
 }
 
 .bg-gray {
@@ -325,7 +329,7 @@ a:hover {
 }
 
 .header-bradcrumb a:hover {
-  color: #1a8646;
+  color: #387002;
 }
 
 .colors-switcher {
@@ -400,7 +404,7 @@ a:hover {
 }
 
 .colors-switcher .colors-list a.blue {
-  background-color: #1a8646;
+  background-color: #387002;
 }
 
 .colors-switcher .colors-list a.light-blue {
@@ -472,11 +476,11 @@ a:hover {
 .navigation .navbar-light .navbar-nav .nav-item .nav-link:active,
 .navigation .navbar-light .navbar-nav .nav-item .nav-link:focus {
   background: none;
-  color: #1a8646;
+  color: #387002;
 }
 
 .navigation .navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: #1a8646;
+  color: #387002;
 }
 
 @media (max-width: 991px) {
@@ -822,7 +826,7 @@ a:hover {
 }
 
 .slick-arrow:hover {
-  background: #1a8646;
+  background: #387002;
 }
 
 .prevArrow {
@@ -863,7 +867,7 @@ a:hover {
 }
 
 .about .btn-about {
-  background: #1a8646;
+  background: #387002;
 }
 
 .about h4 {
@@ -885,7 +889,7 @@ a:hover {
 }
 
 .about .feature-list li i {
-  color: #1a8646;
+  color: #387002;
   margin-right: 8px;
 }
 
@@ -990,7 +994,7 @@ a:hover {
 .contact-form input:hover,
 .contact-form textarea:hover,
 .contact-form #contact-submit:hover {
-  border-color: #1a8646;
+  border-color: #387002;
 }
 
 .contact-form #contact-submit {
@@ -998,7 +1002,7 @@ a:hover {
   padding: 15px 0;
   width: 100%;
   margin: 0;
-  background: #1a8646;
+  background: #387002;
   color: #fff;
   border-radius: 0;
 }
@@ -1039,9 +1043,9 @@ a:hover {
 }
 
 .social-icon ul li a:hover {
-  background: #1a8646;
+  background: #387002;
   color: #fff;
-  border: 1px solid #1a8646;
+  border: 1px solid #387002;
 }
 
 .social-icon ul li a:hover i {
@@ -1125,7 +1129,7 @@ a:hover {
 .counters-item i {
   font-size: 40px;
   display: inline-block;
-  color: #1a8646;
+  color: #387002;
 }
 
 .counters-item h3 {
@@ -1203,7 +1207,7 @@ a:hover {
 }
 
 .pricing-table .price-title .value {
-  color: #1a8646;
+  color: #387002;
   font-size: 50px;
   padding: 10px 0;
 }
@@ -1222,14 +1226,14 @@ a:hover {
   font-size: 14px;
   padding: 8px 20px;
   text-transform: uppercase;
-  background: #1a8646;
+  background: #387002;
   border: none;
   color: #fff;
   outline: none;
 }
 
 .portfolio-filter button.active {
-  background: #1a8646;
+  background: #387002;
   color: #fff;
   border-radius: 50px;
 }
@@ -1285,7 +1289,7 @@ a:hover {
 }
 
 .portfolio-block .caption .search-icon {
-  background: #1a8646;
+  background: #387002;
   color: #fff;
   display: inline-block;
   padding: 4px 13px;
@@ -1301,7 +1305,7 @@ a:hover {
 }
 
 .services .service-block.color-bg {
-  background: #1a8646;
+  background: #387002;
   color: #fff;
 }
 
@@ -1317,7 +1321,7 @@ a:hover {
 
 .services .service-block i {
   font-size: 75px;
-  color: #1a8646;
+  color: #387002;
 }
 
 .services .service-block h3 {
@@ -1349,13 +1353,13 @@ a:hover {
 
 .service-2 .service-item:hover i {
   background: #fff;
-  color: #1a8646;
+  color: #387002;
 }
 
 .service-2 .service-item i {
   font-size: 30px;
   display: inline-block;
-  background: #1a8646 none repeat scroll 0 0;
+  background: #387002 none repeat scroll 0 0;
   border-radius: 30px;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
@@ -1386,7 +1390,7 @@ a:hover {
 }
 
 .team-skills .progress-block .progress .progress-bar {
-  background: #1a8646;
+  background: #387002;
   box-shadow: none;
 }
 
@@ -1431,7 +1435,7 @@ a:hover {
 }
 
 .development-steps .step-2 {
-  background-color: #1a8646;
+  background-color: #387002;
 }
 
 .development-steps .step-2 h4,
@@ -1562,7 +1566,7 @@ a:hover {
 ==================================================================*/
 .testimonial {
   padding-top: 100px;
-  background: #1a8646;
+  background: #387002;
   position: relative;
   padding-bottom: 0px;
   margin-bottom: 80px;
@@ -1662,7 +1666,7 @@ a:hover {
 }
 
 .post-content blockquote {
-  border-left: 2px solid #1a8646;
+  border-left: 2px solid #387002;
   padding: 40px 35px;
   margin-bottom: 30px;
   background: #eeeeee;
@@ -1689,8 +1693,8 @@ a:hover {
 }
 
 .post-content-share li:hover {
-  background: #1a8646;
-  border-color: #1a8646;
+  background: #387002;
+  border-color: #387002;
 }
 
 .post-content-share li:hover i {
@@ -1751,7 +1755,7 @@ a:hover {
 }
 
 .comment-list-item .comment-btn:hover {
-  background: #1a8646;
+  background: #387002;
   color: #fff;
 }
 
@@ -1777,7 +1781,7 @@ a:hover {
 }
 
 .comment-form .btn-primary {
-  background: #1a8646;
+  background: #387002;
   border-radius: 0;
   padding: 10px 20px;
   border: 0;
@@ -1809,7 +1813,7 @@ a:hover {
   right: 0;
   height: 100%;
   width: 50px;
-  background: #1a8646;
+  background: #387002;
   border: 0;
 }
 
@@ -1843,7 +1847,7 @@ a:hover {
 }
 
 .widget-categories-list li a:hover {
-  background: #1a8646;
+  background: #387002;
   color: #fff;
   padding-left: 20px;
 }
@@ -1877,7 +1881,7 @@ a:hover {
 }
 
 .widget-post-content h5:hover {
-  color: #1a8646;
+  color: #387002;
 }
 
 /*=================================================================
@@ -1899,7 +1903,7 @@ a:hover {
 }
 
 .post-meta a {
-  color: #1a8646;
+  color: #387002;
 }
 
 .post-meta > span {
@@ -1960,7 +1964,7 @@ a:hover {
 }
 
 .next-prev a:hover {
-  color: #1a8646;
+  color: #387002;
 }
 
 .next-prev .prev-post i {
@@ -1983,7 +1987,7 @@ a:hover {
 }
 
 .social-profile ul li a i:hover {
-  color: #1a8646;
+  color: #387002;
 }
 
 .comments-section {
@@ -2031,7 +2035,7 @@ a:hover {
 }
 
 .comment-wrap .media .media-heading a {
-  color: #1a8646;
+  color: #387002;
   font-size: 13px;
 }
 
@@ -2058,7 +2062,7 @@ a:hover {
 .comment-reply-form input:focus,
 .comment-reply-form textarea:focus {
   box-shadow: none;
-  border: 1px solid #1a8646;
+  border: 1px solid #387002;
 }
 
 .comment-reply-form textarea,
@@ -2107,7 +2111,7 @@ a:hover {
 }
 
 .top-footer li a:hover {
-  color: #1a8646;
+  color: #387002;
 }
 
 .footer-bottom {
@@ -2139,7 +2143,7 @@ a:hover {
 }
 
 .footer-bottom a {
-  color: #1a8646;
+  color: #387002;
 }
 
 .page-404 {
@@ -2158,7 +2162,7 @@ a:hover {
   width: 100%;
 }
 .bg-color-title {
-  background-color: #1a8646;
+  background-color: #387002;
   color: #fff;
   text-align: left;
   padding: 10px 10px 10px 30px;
