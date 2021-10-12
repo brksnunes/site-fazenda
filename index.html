@@ -32,6 +32,16 @@
     <link rel="stylesheet" href="plugins/animate/animate.css" />
     <!-- Slick Carousel -->
     <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <!-- PhotoSwipe css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css"
+    />
+
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -168,7 +178,6 @@ Start About Section
 ==================================== -->
     <section class="about" id="about">
       <div class="container">
-
         <div class="row">
           <!-- section title -->
           <div class="col-12 title text-center">
@@ -177,6 +186,7 @@ Start About Section
           </div>
           <!-- /section title -->
         </div>
+
         <div class="row">
           <div class="col-md-6">
             <img src="images/home/about-us.jpg" class="img-fluid" alt="" />
@@ -242,12 +252,7 @@ Start About Section
             </ul>
           </div>
         </div>
-        </div>
-
-        <!-- End row -->
-
       </div>
-      <!-- End container -->
     </section>
     <!-- End section -->
 
@@ -291,179 +296,265 @@ Start Call To Action
               <div class="border"></div>
             </div>
             <!-- /section title -->
-            <!-- filters title
-            <div class="portfolio-filter">
-              <button type="button" data-filter="all">Tudo</button>
-              <button type="button" data-filter="bezzerro">Bezzerros</button>
-              <button type="button" data-filter="gir">Girolando</button>
-              <button type="button" data-filter="leite">Leite</button>
-              <button type="button" data-filter="touro">Touro</button>
-            </div>-->
 
-            <div class="row filter-container">
+            <!-- Gallery -->
+            <div>
+              <div class="row">
+                <div class="col-lg-12">
 
-              <div class="col-md-4 col-sm-6 col-xs-6 filtr-item" data-category="mix, gir">
-                <div class="portfolio-block">
-                  <img class="img-fluid" src="images/portfolio/portfolio-1.jpg" alt=""/>
-                  <div class="caption">
-                    <a class="search-icon" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">
-                      <i class="tf-ion-ios-search-strong"></i>
-                    </a>
-                    <h4><a href="">Lorem Ipsum</a></h4>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 col-xs-6 filtr-item" data-category="mix, leite">
-                <div class="portfolio-block">
-                  <img class="img-fluid" src="images/portfolio/portfolio-2.jpg" alt=""/>
-                  <div class="caption">
-                    <a class="search-icon" href="images/portfolio/portfolio-2.jpg" data-lightbox="image-1" >
-                      <i class="tf-ion-ios-search-strong"></i>
-                    </a>
-                    <h4><a href="">Lorem Ipsum</a></h4>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-md-4 col-sm-6 col-xs-6 filtr-item"
-                data-category="mix, bezzerro"
-              >
-                <div class="portfolio-block">
-                  <img
-                    class="img-fluid"
-                    src="images/portfolio/portfolio-3.jpg"
-                    alt=""
-                  />
-                  <div class="caption">
-                    <a
-                      class="search-icon"
-                      href="images/portfolio/portfolio-3.jpg"
-                      data-lightbox="image-1"
+                  <!-- Galley wrapper that contains all items -->
+                  <div
+                    id="gallery"
+                    class="my-gallery text-center"
+                    itemscope
+                    itemtype="http://schema.org/ImageGallery"
+                  >
+                    <!-- Use figure for a more semantic html -->
+                    <figure
+                      itemprop="associatedMedia"
+                      itemscope
+                      itemtype="http://schema.org/ImageObject"
                     >
-                      <i class="tf-ion-ios-search-strong"></i>
-                    </a>
-                    <h4><a href="">Lorem Ipsum</a></h4>
-                  </div>
-                </div>
-              </div>
+                      <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
+                      <a
+                        href="https://unsplash.it/1200/900/?image=702"
+                        data-caption="Sea side, south shore<br><em class='text-muted'>© Dominik Schröder</em>"
+                        data-width="1200"
+                        data-height="900"
+                        itemprop="contentUrl"
+                      >
+                        <!-- Thumbnail -->
+                        <img
+                          src="https://unsplash.it/400/300/?image=702"
+                          itemprop="thumbnail"
+                          alt="Image description"
+                        />
+                      </a>
+                    </figure>
 
-              <div
-                class="col-md-4 col-sm-6 col-xs-6 filtr-item"
-                data-category="mix, bezzerro"
-              >
-                <div class="portfolio-block">
-                  <img
-                    class="img-fluid"
-                    src="images/portfolio/portfolio-4.jpg"
-                    alt=""
-                  />
-                  <div class="caption">
-                    <a
-                      class="search-icon"
-                      href="images/portfolio/portfolio-4.jpg"
-                      data-lightbox="image-1"
+                    <figure
+                      itemprop="associatedMedia"
+                      itemscope
+                      itemtype="http://schema.org/ImageObject"
                     >
-                      <i class="tf-ion-ios-search-strong"></i>
-                    </a>
-                    <h4><a href="">Lorem Ipsum</a></h4>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-md-4 col-sm-6 col-xs-6 filtr-item"
-                data-category="mix, bezzerro"
-              >
-                <div class="portfolio-block">
-                  <img
-                    class="img-fluid"
-                    src="images/portfolio/portfolio-5.jpg"
-                    alt=""
-                  />
-                  <div class="caption">
-                    <a
-                      class="search-icon"
-                      href="images/portfolio/portfolio-5.jpg"
-                      data-lightbox="image-1"
+                      <a
+                        href="https://unsplash.it/1200/900/?image=695"
+                        data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>"
+                        data-width="1200"
+                        data-height="900"
+                        itemprop="contentUrl"
+                      >
+                        <img
+                          src="https://unsplash.it/400/300/?image=695"
+                          itemprop="thumbnail"
+                          alt="Image description"
+                        />
+                      </a>
+                    </figure>
+                    <figure
+                      itemprop="associatedMedia"
+                      itemscope
+                      itemtype="http://schema.org/ImageObject"
                     >
-                      <i class="tf-ion-ios-search-strong"></i>
-                    </a>
-                    <h4><a href="">Lorem Ipsum</a></h4>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-md-4 col-sm-6 col-xs-6 filtr-item"
-                data-category="mix, touro"
-              >
-                <div class="portfolio-block">
-                  <img
-                    class="img-fluid"
-                    src="images/portfolio/portfolio-6.jpg"
-                    alt=""
-                  />
-                  <div class="caption">
-                    <a
-                      class="search-icon"
-                      href="images/portfolio/portfolio-6.jpg"
-                      data-lightbox="image-1"
+                      <a
+                        href="https://unsplash.it/1200/900/?image=675"
+                        data-caption="Mysterious ocean<br><em class='text-muted'>© Barn Images</em>"
+                        data-width="1200"
+                        data-height="900"
+                        itemprop="contentUrl"
+                      >
+                        <img
+                          src="https://unsplash.it/400/300/?image=675"
+                          itemprop="thumbnail"
+                          alt="Image description"
+                        />
+                      </a>
+                    </figure>
+                    <figure
+                      itemprop="associatedMedia"
+                      itemscope
+                      itemtype="http://schema.org/ImageObject"
                     >
-                      <i class="tf-ion-ios-search-strong"></i>
-                    </a>
-                    <h4><a href="">Lorem Ipsum</a></h4>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-md-4 col-sm-6 col-xs-6 filtr-item"
-                data-category="mix, bezzerro"
-              >
-                <div class="portfolio-block">
-                  <img
-                    class="img-fluid"
-                    src="images/portfolio/portfolio-7.jpg"
-                    alt=""
-                  />
-                  <div class="caption">
-                    <a
-                      class="search-icon"
-                      href="images/portfolio/portfolio-7.jpg"
-                      data-lightbox="image-1"
+                      <a
+                        href="https://unsplash.it/1200/900/?image=651"
+                        data-caption="Cloud over the mountains<br><em class='text-muted'>© James Pritchett</em>"
+                        data-width="1200"
+                        data-height="900"
+                        itemprop="contentUrl"
+                      >
+                        <img
+                          src="https://unsplash.it/400/300/?image=651"
+                          itemprop="thumbnail"
+                          alt="Image description"
+                        />
+                      </a>
+                    </figure>
+                    <figure
+                      itemprop="associatedMedia"
+                      itemscope
+                      itemtype="http://schema.org/ImageObject"
                     >
-                      <i class="tf-ion-ios-search-strong"></i>
-                    </a>
-                    <h4><a href="">Lorem Ipsum</a></h4>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="col-md-4 col-sm-6 col-xs-6 filtr-item"
-                data-category="mix, design, development"
-              >
-                <div class="portfolio-block">
-                  <img
-                    class="img-fluid"
-                    src="images/portfolio/portfolio-1.jpg"
-                    alt=""
-                  />
-                  <div class="caption">
-                    <a
-                      class="search-icon"
-                      href="images/portfolio/portfolio-1.jpg"
-                      data-lightbox="image-1"
+                      <a
+                        href="https://unsplash.it/1200/900/?image=584"
+                        data-caption="Icelandic horses<br><em class='text-muted'>© Bethany Legg</em>"
+                        data-width="1200"
+                        data-height="900"
+                        itemprop="contentUrl"
+                      >
+                        <img
+                          src="https://unsplash.it/400/300/?image=584"
+                          itemprop="thumbnail"
+                          alt="Image description"
+                        />
+                      </a>
+                    </figure>
+                    <figure
+                      itemprop="associatedMedia"
+                      itemscope
+                      itemtype="http://schema.org/ImageObject"
                     >
-                      <i class="tf-ion-ios-search-strong"></i>
-                    </a>
-                    <h4><a href="">Lorem Ipsum</a></h4>
+                      <a
+                        href="https://unsplash.it/1200/900/?image=574"
+                        data-caption="Sea side, south shore<br><em class='text-muted'>© Julien Lavallée</em>"
+                        data-width="1200"
+                        data-height="900"
+                        itemprop="contentUrl"
+                      >
+                        <img
+                          src="https://unsplash.it/400/300/?image=574"
+                          itemprop="thumbnail"
+                          alt="Image description"
+                        />
+                      </a>
+                    </figure>
+                    <figure
+                      itemprop="associatedMedia"
+                      itemscope
+                      itemtype="http://schema.org/ImageObject"
+                    >
+                      <a
+                        href="https://unsplash.it/1200/900/?image=551"
+                        data-caption="Sunset on the highland road<br><em class='text-muted'>© Forrest Cavale</em>"
+                        data-width="1200"
+                        data-height="900"
+                        itemprop="contentUrl"
+                      >
+                        <img
+                          src="https://unsplash.it/400/300/?image=551"
+                          itemprop="thumbnail"
+                          alt="Image description"
+                        />
+                      </a>
+                    </figure>
+                    <figure
+                      itemprop="associatedMedia"
+                      itemscope
+                      itemtype="http://schema.org/ImageObject"
+                    >
+                      <a
+                        href="https://unsplash.it/1200/900/?image=509"
+                        data-caption="Seljalandsfoss waterfall<br><em class='text-muted'>© Jeff Sheldon</em>"
+                        data-width="1200"
+                        data-height="900"
+                        itemprop="contentUrl"
+                      >
+                        <img
+                          src="https://unsplash.it/400/300/?image=509"
+                          itemprop="thumbnail"
+                          alt="Image description"
+                        />
+                      </a>
+                    </figure>
+                    <figure
+                      itemprop="associatedMedia"
+                      itemscope
+                      itemtype="http://schema.org/ImageObject"
+                    >
+                      <a
+                        href="https://unsplash.it/1200/900/?image=511"
+                        data-caption="Fjadrarglufur canyon, south shore<br><em class='text-muted'>© Jeff Sheldon</em>"
+                        data-width="1200"
+                        data-height="900"
+                        itemprop="contentUrl"
+                      >
+                        <img
+                          src="https://unsplash.it/400/300/?image=511"
+                          itemprop="thumbnail"
+                          alt="Image description"
+                        />
+                      </a>
+                    </figure>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Root element of PhotoSwipe. Must have class pswp. -->
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+              <!-- Background of PhotoSwipe. 
+                   It's a separate element as animating opacity is faster than rgba(). -->
+              <div class="pswp__bg"></div>
+              <!-- Slides wrapper with overflow:hidden. -->
+              <div class="pswp__scroll-wrap">
+                <!-- Container that holds slides. 
+                      PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                      Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                </div>
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+                  <div class="pswp__top-bar">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+                    <button
+                      class="pswp__button pswp__button--close"
+                      title="Close (Esc)"
+                    ></button>
+                    <button
+                      class="pswp__button pswp__button--fs"
+                      title="Toggle fullscreen"
+                    ></button>
+                    <button
+                      class="pswp__button pswp__button--zoom"
+                      title="Zoom in/out"
+                    ></button>
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      pswp__share-modal
+                      pswp__share-modal--hidden
+                      pswp__single-tap
+                    "
+                  >
+                    <div class="pswp__share-tooltip"></div>
+                  </div>
+                  <button
+                    class="pswp__button pswp__button--arrow--left"
+                    title="Previous (arrow left)"
+                  ></button>
+                  <button
+                    class="pswp__button pswp__button--arrow--right"
+                    title="Next (arrow right)"
+                  ></button>
+                  <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Gallery -->
           </div>
           <!-- /end col-lg-12 -->
         </div>
@@ -628,8 +719,12 @@ Start Call To Action
 
           <!-- Contact Form -->
           <div class="contact-form col-md-6">
-
-            <form name="contact-form" method="POST" role="form" data-netlify="true">
+            <form
+              name="contact-form"
+              method="POST"
+              role="form"
+              data-netlify="true"
+            >
               <div class="form-group">
                 <input
                   type="text"
@@ -682,7 +777,6 @@ Start Call To Action
                 />
               </div>
             </form>
-
           </div>
 
           <!-- ./End Contact Form -->
@@ -705,10 +799,9 @@ Start Call To Action
 =====================================-->
     <!-- Main jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
-    <!-- Google Map
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-    <script src="plugins/google-map/gmap.js"></script>-->
-
+    <!-- Photoswipe -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
     <!-- Form Validation -->
     <script src="plugins/form-validation/jquery.form.js"></script>
     <script src="plugins/form-validation/jquery.validate.min.js"></script>
@@ -726,5 +819,52 @@ Start Call To Action
     <script src="plugins/smooth-scroll/smooth-scroll.min.js"></script>
     <!-- Custom js -->
     <script src="js/script.js"></script>
+    <script>
+      "use strict";
+
+      /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
+
+      (function ($) {
+        // Init empty gallery array
+        var container = [];
+
+        // Loop over gallery items and push it to the array
+        $("#gallery")
+          .find("figure")
+          .each(function () {
+            var $link = $(this).find("a"),
+              item = {
+                src: $link.attr("href"),
+                w: $link.data("width"),
+                h: $link.data("height"),
+                title: $link.data("caption"),
+              };
+            container.push(item);
+          });
+
+        // Define click event on gallery item
+        $("a").click(function (event) {
+          // Prevent location change
+          event.preventDefault();
+
+          // Define object and gallery options
+          var $pswp = $(".pswp")[0],
+            options = {
+              index: $(this).parent("figure").index(),
+              bgOpacity: 0.85,
+              showHideOpacity: true,
+            };
+
+          // Initialize PhotoSwipe
+          var gallery = new PhotoSwipe(
+            $pswp,
+            PhotoSwipeUI_Default,
+            container,
+            options
+          );
+          gallery.init();
+        });
+      })(jQuery);
+    </script>
   </body>
 </html>

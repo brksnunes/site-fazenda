@@ -39,6 +39,11 @@ ul {
 
 figure {
   margin: 0;
+  width: 33.333%;
+  float: left;
+}
+.pswp__caption__center {
+  text-align: center;
 }
 
 a {
@@ -442,7 +447,7 @@ a:hover {
 }
 
 .single-page-header:before {
-  background: rgba(0, 0, 0, 0.0);
+  background: rgba(0, 0, 0, 0);
   position: absolute;
   content: "";
   top: 0;
@@ -2158,7 +2163,7 @@ a:hover {
 /*============================================================
 	Páginaa dos animais
 ==============================================================*/
-.responsive-image{
+.responsive-image {
   width: 100%;
 }
 .bg-color-title {
@@ -2515,4 +2520,33 @@ a:hover {
   }
 }
 
+@media only screen and (min-width: 460px) and (max-width: 767px) {
+  .my-gallery figure {
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 100%;
+  }
+  .my-gallery figcaption {
+    display: none;
+  }
+}
+
+.my-gallery {
+  width: 100%;
+  float: left;
+}
+.my-gallery img {
+  width: 100%;
+  height: auto;
+}
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 32%;
+}
+.my-gallery figcaption {
+  display: none;
+}
 /*# sourceMappingURL=maps/style.css.map */
